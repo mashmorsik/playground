@@ -1,0 +1,46 @@
+body {
+    font-family: 'Play', sans-serif;
+    margin: 2.5rem;
+    background-color: rgb(88, 6, 105);
+    color: aliceblue;
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5rem;
+    margin: 3rem;
+}
+
+.color {
+    background: linear-gradient(269.96deg, #8CE67D -0.81%, #EE6485 27.1%, #6A82FF 69.12%, #F479FF 102.25%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    }
+
+div#motto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 1.4rem;
+    margin: 1rem;
+}
+
+.grid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    
+}
+
+.grid div {
+    border: 1px solid black;
+    height: 11rem;
+    width: 11rem;
+    margin: 2rem;
+    margin-left: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
