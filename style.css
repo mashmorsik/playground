@@ -1,3 +1,8 @@
+header {
+    color: #8CE67D;
+    padding-top: 0.7rem;
+}
+
 body {
     font-family: 'Play', sans-serif;
     margin: 2.5rem;
@@ -16,14 +21,24 @@ h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    }
+}
 
 div#motto {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     font-size: 1.4rem;
-    margin: 1rem;
+}
+
+.motta {
+
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    height: 2.5rem;
+    width: 12rem;
+    text-align: center;
+    padding-top: 0.5rem;
 }
 
 .grid {
@@ -32,15 +47,39 @@ div#motto {
     justify-content: center;
     margin-left: 10rem;
     margin-right: 10rem;
-    
+
 }
 
 .grid div {
-    border: 1px solid black;
     height: 11rem;
     width: 11rem;
     margin: 2rem;
     margin-left: 1rem;
     text-align: center;
     font-size: 1.2rem;
+    transition: transform .2s;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue
+}
+
+.grid div:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
 }

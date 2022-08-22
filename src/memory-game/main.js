@@ -81,9 +81,14 @@ function checkMatch() {
         alert('You clicked the same image!')
     }
     if(cardsChosen[0] == cardsChosen[1]) {
+        
         // alert('You found a match!')
-        cards[optionOneId].setAttribute('src', 'images/white.jpg')
-        cards[optionTwoId].setAttribute('src', 'images/white.jpg')
+        // cards[optionOneId].setAttribute('src', 'images/white.jpg')
+        // cards[optionTwoId].setAttribute('src', 'images/white.jpg')
+
+        cards[optionOneId].classList.add('seethrough')
+        cards[optionTwoId].classList.add('seethrough')
+
         cards[optionOneId].removeEventListener('click', flipCard)
         cards[optionTwoId].removeEventListener('click', flipCard) 
         cardsWon.push(cardsChosen)
